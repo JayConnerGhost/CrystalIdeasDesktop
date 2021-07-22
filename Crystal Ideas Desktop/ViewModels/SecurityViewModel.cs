@@ -1,4 +1,7 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using System;
+using System.Windows.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Crystal_Ideas_Desktop.Models;
 
 namespace Crystal_Ideas_Desktop.ViewModels
@@ -11,7 +14,19 @@ namespace Crystal_Ideas_Desktop.ViewModels
         {
             _model = model;
             _model.Title = "populated";
+            RegisterProfile = new RelayCommand(CreateProfile);
         }
+
+        public SecurityViewModel() : this(new SecurityModel())
+        {
+        }
+
+        public void CreateProfile()
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICommand RegisterProfile { get; }
 
         public string Title
         {

@@ -6,22 +6,42 @@
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:Crystal_Ideas_Desktop.ViewModels"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
+   
+
+    <Page.Resources>
+        <ControlTemplate TargetType="Button" x:Key="ButtonLink">
+            <TextBlock Text="{TemplateBinding Content}" />
+        </ControlTemplate>
+        <Style TargetType="Button" x:Key="ButtonTemplate" >
+            <Setter Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate >
+                        <Border  BorderThickness="0" CornerRadius="0"  >
+                        
+                                <ContentPresenter VerticalAlignment="Center"  />
+                         
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+</Page.Resources>
 
     <Grid>
       <!--  <TextBlock Text="{Binding Title, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="Blue"></TextBlock>-->
         <!-- security holder -->
    
-      <StackPanel x:ConnectionId='2' Name="SecurityHolder"
+      <StackPanel x:ConnectionId='5' Name="SecurityHolder"
                   HorizontalAlignment="Center"
                   VerticalAlignment="Center"
                   Height="200"
       >
           <Border  
               BorderBrush="{ThemeResource FurnitureAcylicBrush }" BorderThickness="3" CornerRadius="40" Padding="10">
-                <Grid x:ConnectionId='3' 
+                <Grid x:ConnectionId='6' 
               Name="LoginGrid"
                     Background="{ThemeResource FurnitureAcylicBrush }"
               CornerRadius="40"
@@ -40,12 +60,31 @@
                            Text="Login..."></TextBlock>
                     <TextBlock Text="Username" Grid.Column="0" Grid.Row="1" Margin="2,10,20,10"></TextBlock>
                     <TextBlock Text="Password" Grid.Column="0" Grid.Row="2" Margin="2,10,20,10"></TextBlock>
-                    <TextBox x:ConnectionId='4' Name="TxtUsername" Grid.Column="1" Grid.Row="1" Margin="2,10,20,10"></TextBox>
-                    <PasswordBox x:ConnectionId='5' Name="TxtPassword" Grid.Column="1" Grid.Row="2" Margin="2,10,20,10"></PasswordBox>
-                <Button x:ConnectionId='6' Name="Submit" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Margin="0,0,20,10" CornerRadius="5" >
+                    <TextBox x:ConnectionId='7' Name="TxtUsername" Grid.Column="1" Grid.Row="1" Margin="2,10,20,10"></TextBox>
+                    <PasswordBox x:ConnectionId='8' Name="TxtPassword" Grid.Column="1" Grid.Row="2" Margin="2,10,20,10"></PasswordBox>
+                <Button x:ConnectionId='9' Name="Submit" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Margin="0,0,20,10" CornerRadius="5" >
                 <TextBlock Text="Submit"></TextBlock>
                 </Button>
-            </Grid>
+
+                    <Button 
+                        Grid.Column="0" Grid.Row="3" 
+                    
+                        >
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Button x:ConnectionId='11'  x:Name="ButtonLink" Content="Register Profile"
+                                                                      
+                                         Command="{Binding DataContext.RegisterProfile, RelativeSource={RelativeSource Mode=TemplatedParent}}" CommandParameter="{Binding}"
+                                         HorizontalAlignment="Left"
+                                        
+                                        
+                                        ></Button>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+
+                </Grid>
           </Border>
         </StackPanel>
      

@@ -24,13 +24,14 @@ namespace Crystal_Ideas_Desktop.Views
     /// </summary>
     public sealed partial class SecurityView : Page
     {
-        private readonly ISecurityViewModel _viewModel;
+        private readonly ISecurityViewModel ViewModel;
 
         public SecurityView()
         {
-            _viewModel = App.Current.Services.GetService<ISecurityViewModel>();
-            this.DataContext = _viewModel;
+            ViewModel = App.Current.Services.GetService<ISecurityViewModel>();
+            this.DataContext = ViewModel;
             this.InitializeComponent();
         }
+
     }
 }
