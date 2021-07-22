@@ -11999,11 +11999,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code2\\UWP\\Crystal Ideas Desktop\\Crystal Ideas Desktop.csproj",
+      "projectUniqueName": "C:\\Code2\\UWP\\desktopProject\\Crystal Ideas Desktop\\Crystal Ideas Desktop.csproj",
       "projectName": "Crystal Ideas Desktop",
-      "projectPath": "C:\\Code2\\UWP\\Crystal Ideas Desktop\\Crystal Ideas Desktop.csproj",
+      "projectPath": "C:\\Code2\\UWP\\desktopProject\\Crystal Ideas Desktop\\Crystal Ideas Desktop.csproj",
       "packagesPath": "C:\\Users\\jayka\\.nuget\\packages\\",
-      "outputPath": "C:\\Code2\\UWP\\Crystal Ideas Desktop\\obj\\",
+      "outputPath": "C:\\Code2\\UWP\\desktopProject\\Crystal Ideas Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

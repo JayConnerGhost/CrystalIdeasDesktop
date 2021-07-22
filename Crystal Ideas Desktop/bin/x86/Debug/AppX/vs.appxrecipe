@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>09b6af67-7444-4073-a500-dfd67eb3f9d5</PackageIdentityName>
     <PackageIdentityPublisher>CN=jayka</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Code2\UWP\Crystal Ideas Desktop\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>E898AFA6FCA2DC7D43F3F954AC5D8D188A98CCB45C027BA44CB520FC86800478</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>09b6af67-7444-4073-a500-dfd67eb3f9d5_1.0.0.0_x86__gxee1cev7r5qp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>09b6af67-7444-4073-a500-dfd67eb3f9d5_gxee1cev7r5qp!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-20T12:01:19.109</Modified>
+      <Modified>2021-07-22T04:39:35.300</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\Crystal Ideas Desktop.exe">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Crystal Ideas Desktop.exe">
       <PackagePath>entrypoint\Crystal Ideas Desktop.exe</PackagePath>
-      <Modified>2021-07-20T12:01:18.354</Modified>
+      <Modified>2021-07-22T04:39:34.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jayka\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -178,59 +178,59 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</PackagePath>
       <Modified>2021-05-12T06:25:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2021-06-21T16:01:00.365</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2021-03-17T23:04:37.105</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-03-17T23:04:37.122</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-03-17T23:04:37.126</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-03-17T23:04:37.130</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-03-17T23:04:37.134</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-03-17T23:04:37.139</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2021-03-17T23:04:37.143</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\Crystal Ideas Desktop.xr.xml">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Crystal Ideas Desktop.xr.xml">
       <PackagePath>Crystal Ideas Desktop.xr.xml</PackagePath>
-      <Modified>2021-07-20T12:01:18.287</Modified>
+      <Modified>2021-07-22T04:36:18.409</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-20T11:56:26.217</Modified>
+      <Modified>2021-07-22T04:39:34.550</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-20T11:56:26.217</Modified>
+      <Modified>2021-07-22T04:39:34.551</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\Views\SecurityView.xbf">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Views\SecurityView.xbf">
       <PackagePath>Views\SecurityView.xbf</PackagePath>
-      <Modified>2021-07-20T12:01:18.291</Modified>
+      <Modified>2021-07-22T04:39:34.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -240,13 +240,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2020-12-02T02:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-07-20T04:56:54.361</Modified>
+      <Modified>2021-07-20T18:57:57.792</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Code2\UWP\Crystal Ideas Desktop\bin\x86\Debug\Core\Crystal Ideas Desktop.exe">
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Core\Crystal Ideas Desktop.exe">
       <PackagePath>Crystal Ideas Desktop.exe</PackagePath>
-      <Modified>2021-07-20T12:01:19.105</Modified>
+      <Modified>2021-07-22T04:39:35.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jayka\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

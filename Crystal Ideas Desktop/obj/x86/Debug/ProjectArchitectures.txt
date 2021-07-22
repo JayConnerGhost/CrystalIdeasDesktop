@@ -1,1 +1,1 @@
-C:\Code2\UWP\Crystal Ideas Desktop\Crystal Ideas Desktop.csproj;x86
+C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\Crystal Ideas Desktop.csproj;x86

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AyfE1kuh0k32knZagpMbvjd85FdS7C+yz3nT5cyMxsBAvvJJij1GckToLZQ/j2v17fhSswM2EygD+rMcPEJ23w==",
+  "dgSpecHash": "J9H3wTJdKoP8VAaRyL0VGwyvce1khiYsv6ofzJ7jNR0dBM3bIwcpfJmGosDxDbaSou7LXI2ob05rldmWZZ0YiQ==",
   "success": true,
-  "projectFilePath": "C:\\Code2\\UWP\\Crystal Ideas Desktop\\Crystal Ideas Desktop.csproj",
+  "projectFilePath": "C:\\Code2\\UWP\\desktopProject\\Crystal Ideas Desktop\\Crystal Ideas Desktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jayka\\.nuget\\packages\\colorcode.core\\2.0.6\\colorcode.core.2.0.6.nupkg.sha512",
     "C:\\Users\\jayka\\.nuget\\packages\\colorcode.uwp\\2.0.6\\colorcode.uwp.2.0.6.nupkg.sha512",
