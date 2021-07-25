@@ -135,7 +135,9 @@
     <Compile Include="ViewModels\ISecurityViewModel.cs" />
     <Compile Include="ViewModels\RegisterProfileViewModel.cs" />
     <Compile Include="ViewModels\SecurityViewModel.cs" />
-    <Compile Include="Views\ProfileRegister.cs" />
+    <Compile Include="Views\RegisterProfileView.xaml.cs">
+      <DependentUpon>RegisterProfileView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SecurityView.xaml.cs">
       <DependentUpon>SecurityView.xaml</DependentUpon>
     </Compile>
@@ -163,6 +165,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\RegisterProfileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SecurityView.xaml">
       <SubType>Designer</SubType>

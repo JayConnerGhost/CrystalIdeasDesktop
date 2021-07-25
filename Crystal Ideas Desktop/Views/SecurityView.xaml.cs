@@ -32,7 +32,7 @@ namespace Crystal_Ideas_Desktop.Views
         public SecurityView(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            ViewModel = App.Current.Services.GetService<ISecurityViewModel>();
+            ViewModel = App.Services.GetService<ISecurityViewModel>();
             this.DataContext = ViewModel;
             this.InitializeComponent();
             LoadMessenger();
@@ -43,7 +43,7 @@ namespace Crystal_Ideas_Desktop.Views
             // Register a message in some module
             WeakReferenceMessenger.Default.Register<DisplayRegisterUserMessage>(this, (r, m) =>
             {
-              //this._navigationService.NavigateTo(typeof(""))
+                this._navigationService.NavigateTo(typeof(RegisterProfileView));
             });
         }
     }

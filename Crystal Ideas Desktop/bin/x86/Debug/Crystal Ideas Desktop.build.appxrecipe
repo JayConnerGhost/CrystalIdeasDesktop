@@ -172,6 +172,9 @@
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Views\RegisterProfileView.xbf">
+      <PackagePath>Views\RegisterProfileView.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Views\SecurityView.xbf">
       <PackagePath>Views\SecurityView.xbf</PackagePath>
     </AppxPackagedFile>

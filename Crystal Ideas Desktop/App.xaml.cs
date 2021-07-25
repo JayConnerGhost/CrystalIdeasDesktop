@@ -27,7 +27,7 @@ namespace Crystal_Ideas_Desktop
         /// <summary>
         /// Gets the <see cref="IServiceProvider"/> instance to resolve application services.
         /// </summary>
-        public IServiceProvider Services { get; set; }
+        public static IServiceProvider Services { get; set; }
 
         /// <summary>
         public App()
@@ -41,6 +41,7 @@ namespace Crystal_Ideas_Desktop
         {
             var services = new ServiceCollection();
             services.AddSingleton<SecurityView>();
+            services.AddSingleton<RegisterProfileView>();
             services.AddSingleton<ISecurityViewModel, SecurityViewModel>();
             services.AddSingleton<ISecurityModel, SecurityModel>();
             services.AddSingleton<INavigationService>(new NavigationService(this.frame));
@@ -58,7 +59,7 @@ namespace Crystal_Ideas_Desktop
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
             this.frame = Window.Current.Content as Frame;
-            this.Services = this.ConfigureServices();
+         
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
             if (this.frame == null)
@@ -75,7 +76,9 @@ namespace Crystal_Ideas_Desktop
 
                 // Place the frame in the current Window
                 Window.Current.Content = this.frame;
+
             }
+            Services = this.ConfigureServices();
 
             if (e.PrelaunchActivated == false)
             {
@@ -84,7 +87,7 @@ namespace Crystal_Ideas_Desktop
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    this.frame.Content = this.Services.GetRequiredService(typeof(SecurityView));
+                    this.frame.Content = Services.GetRequiredService(typeof(SecurityView));
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
