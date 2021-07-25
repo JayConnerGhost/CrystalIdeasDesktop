@@ -12,8 +12,10 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Crystal_Ideas_Desktop.Services;
 using Crystal_Ideas_Desktop.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Toolkit.Mvvm.Messaging;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -24,14 +26,25 @@ namespace Crystal_Ideas_Desktop.Views
     /// </summary>
     public sealed partial class SecurityView : Page
     {
+        private readonly INavigationService _navigationService;
         private readonly ISecurityViewModel ViewModel;
 
-        public SecurityView()
+        public SecurityView(INavigationService navigationService)
         {
+            _navigationService = navigationService;
             ViewModel = App.Current.Services.GetService<ISecurityViewModel>();
             this.DataContext = ViewModel;
             this.InitializeComponent();
+            LoadMessenger();
         }
 
+        private void LoadMessenger()
+        {
+            // Register a message in some module
+            WeakReferenceMessenger.Default.Register<DisplayRegisterUserMessage>(this, (r, m) =>
+            {
+              //this._navigationService.NavigateTo(typeof(""))
+            });
+        }
     }
 }

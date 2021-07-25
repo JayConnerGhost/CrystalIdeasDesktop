@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel;
-using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-using Crystal_Ideas_Desktop.Models;
+﻿using Crystal_Ideas_Desktop.Models;
+using Crystal_Ideas_Desktop.Services;
 using Crystal_Ideas_Desktop.ViewModels;
 using Crystal_Ideas_Desktop.Views;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.Activation;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 
 
 namespace Crystal_Ideas_Desktop
@@ -32,15 +23,16 @@ namespace Crystal_Ideas_Desktop
         /// </summary>
         public new static App Current => (App)Application.Current;
 
+        private Frame frame = new Frame();
         /// <summary>
         /// Gets the <see cref="IServiceProvider"/> instance to resolve application services.
         /// </summary>
-        public IServiceProvider Services { get; }
+        public IServiceProvider Services { get; set; }
 
         /// <summary>
         public App()
         {
-           Services= this.ConfigureServices();
+         
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
@@ -48,10 +40,12 @@ namespace Crystal_Ideas_Desktop
         private ServiceProvider ConfigureServices()
         {
             var services = new ServiceCollection();
-
+            services.AddSingleton<SecurityView>();
             services.AddSingleton<ISecurityViewModel, SecurityViewModel>();
             services.AddSingleton<ISecurityModel, SecurityModel>();
-
+            services.AddSingleton<INavigationService>(new NavigationService(this.frame));
+            services.AddSingleton<IRegisterProfileViewModel, RegisterProfileViewModel>();
+            services.AddSingleton<IRegisterProfileModel, RegisterProfileModel>();
 
             return services.BuildServiceProvider();
         }
@@ -63,16 +57,16 @@ namespace Crystal_Ideas_Desktop
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-            Frame rootFrame = Window.Current.Content as Frame;
-
+            this.frame = Window.Current.Content as Frame;
+            this.Services = this.ConfigureServices();
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
-            if (rootFrame == null)
+            if (this.frame == null)
             {
                 // Create a Frame to act as the navigation context and navigate to the first page
-                rootFrame = new Frame();
+                this.frame = new Frame();
 
-                rootFrame.NavigationFailed += OnNavigationFailed;
+                this.frame.NavigationFailed += OnNavigationFailed;
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -80,17 +74,17 @@ namespace Crystal_Ideas_Desktop
                 }
 
                 // Place the frame in the current Window
-                Window.Current.Content = rootFrame;
+                Window.Current.Content = this.frame;
             }
 
             if (e.PrelaunchActivated == false)
             {
-                if (rootFrame.Content == null)
+                if (this.frame.Content == null)
                 {
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(SecurityView), e.Arguments);
+                    this.frame.Content = this.Services.GetRequiredService(typeof(SecurityView));
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();

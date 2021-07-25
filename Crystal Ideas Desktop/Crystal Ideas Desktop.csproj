@@ -119,14 +119,23 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dtos\SystemUser.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\IRegisterProfileModel.cs" />
     <Compile Include="Models\ISecurityModel.cs" />
+    <Compile Include="Models\RegisterProfileModel.cs" />
     <Compile Include="Models\SecurityModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\INavigationService.cs" />
+    <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="ViewModels\DisplayRegisterUserMessage.cs" />
+    <Compile Include="ViewModels\IRegisterProfileViewModel.cs" />
     <Compile Include="ViewModels\ISecurityViewModel.cs" />
+    <Compile Include="ViewModels\RegisterProfileViewModel.cs" />
     <Compile Include="ViewModels\SecurityViewModel.cs" />
+    <Compile Include="Views\ProfileRegister.cs" />
     <Compile Include="Views\SecurityView.xaml.cs">
       <DependentUpon>SecurityView.xaml</DependentUpon>
     </Compile>
@@ -206,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
+    <Folder Include="Messenges\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

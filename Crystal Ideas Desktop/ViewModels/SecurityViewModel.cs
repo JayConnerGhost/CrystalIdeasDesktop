@@ -2,7 +2,9 @@
 using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Crystal_Ideas_Desktop.Dtos;
 using Crystal_Ideas_Desktop.Models;
+using Microsoft.Toolkit.Mvvm.Messaging;
 
 namespace Crystal_Ideas_Desktop.ViewModels
 {
@@ -23,7 +25,7 @@ namespace Crystal_Ideas_Desktop.ViewModels
 
         public void CreateProfile()
         {
-            throw new NotImplementedException();
+            WeakReferenceMessenger.Default.Send(new DisplayRegisterUserMessage(new SystemUser()));
         }
 
         public ICommand RegisterProfile { get; }
