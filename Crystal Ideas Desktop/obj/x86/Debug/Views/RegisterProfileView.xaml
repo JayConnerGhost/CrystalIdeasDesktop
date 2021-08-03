@@ -9,7 +9,51 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Text="test "></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock  TextWrapping="NoWrap" 
+                    HorizontalAlignment="Center"
+                    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                    FontSize="25"
+                    FontWeight="Medium"
+                    Text="Please Enter Profile Details " 
+                    Grid.Row="0"
+                   
+                    />
+
+
+        
+<!--//Validating now needed-->
+<!--//Data Form(Profile)-->
+        <StackPanel  HorizontalAlignment="Center"
+                     VerticalAlignment="Center" 
+                     Grid.Row="1" Margin="50" MaxWidth="400" MinWidth="400">
+        <StackPanel  
+                   
+                    >
+            <TextBlock  TextWrapping="Wrap" Text="First Name: " />
+                <TextBox x:ConnectionId='2' x:Name="TxtFirstName" TextWrapping="Wrap" 
+                     Text="{Binding DataContext.FirstName, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                                        
+
+            <TextBlock  TextWrapping="Wrap" Text="Last Name: " />
+                <TextBox x:ConnectionId='3' x:Name="TxtLastName" TextWrapping="Wrap"
+                         Text="{Binding DataContext.LastName, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+
+            <TextBlock  TextWrapping="Wrap" Text="Password: " />
+            <TextBox x:ConnectionId='4' x:Name="TxtPassword" TextWrapping="Wrap" />
+
+            <TextBlock  TextWrapping="Wrap" Text=" Email Address: " />
+            <TextBox x:ConnectionId='5' x:Name="TxtEmailAddress" TextWrapping="Wrap" />
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" >
+                <Button x:ConnectionId='6' x:Name="BtnSave" Margin="0,2,10,0">Save</Button>
+                <Button x:ConnectionId='7' x:Name="BtnClear" Margin="0,2,0,0">Clear Form</Button>
+
+            </StackPanel>
+        </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>
 

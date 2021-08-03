@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-07-25T14:48:30.063</Modified>
+      <Modified>2021-08-03T03:49:13.693</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Crystal Ideas Desktop.exe">
       <PackagePath>entrypoint\Crystal Ideas Desktop.exe</PackagePath>
-      <Modified>2021-07-25T14:48:29.372</Modified>
+      <Modified>2021-08-03T03:49:12.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jayka\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -218,23 +218,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Crystal Ideas Desktop.xr.xml">
       <PackagePath>Crystal Ideas Desktop.xr.xml</PackagePath>
-      <Modified>2021-07-25T08:19:42.844</Modified>
+      <Modified>2021-08-03T03:47:04.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-07-25T14:44:25.300</Modified>
+      <Modified>2021-08-03T03:44:04.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-07-25T14:44:25.300</Modified>
+      <Modified>2021-08-03T03:44:04.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Views\RegisterProfileView.xbf">
       <PackagePath>Views\RegisterProfileView.xbf</PackagePath>
-      <Modified>2021-07-25T14:44:25.300</Modified>
+      <Modified>2021-08-03T03:49:12.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Views\SecurityView.xbf">
       <PackagePath>Views\SecurityView.xbf</PackagePath>
-      <Modified>2021-07-25T14:44:25.300</Modified>
+      <Modified>2021-08-03T03:44:04.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -246,11 +246,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-07-25T08:19:43.026</Modified>
+      <Modified>2021-07-26T03:02:42.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Code2\UWP\desktopProject\Crystal Ideas Desktop\bin\x86\Debug\Core\Crystal Ideas Desktop.exe">
       <PackagePath>Crystal Ideas Desktop.exe</PackagePath>
-      <Modified>2021-07-25T14:48:30.060</Modified>
+      <Modified>2021-08-03T03:49:13.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jayka\.nuget\packages\microsoft.ui.xaml\2.6.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>

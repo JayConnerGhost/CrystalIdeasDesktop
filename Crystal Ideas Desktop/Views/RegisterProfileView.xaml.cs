@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Crystal_Ideas_Desktop.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,8 +24,11 @@ namespace Crystal_Ideas_Desktop.Views
     /// </summary>
     public sealed partial class RegisterProfileView : Page
     {
+        private readonly IRegisterProfileViewModel ViewModel;
         public RegisterProfileView()
         {
+            ViewModel = App.Services.GetService<IRegisterProfileViewModel>();
+            this.DataContext = ViewModel;
             this.InitializeComponent();
         }
     }
